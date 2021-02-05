@@ -1,0 +1,86 @@
+Ejercicio 1 : 
+--------------------
+
+Trabaje con la tabla "peliculas" de un video club 
+1- Elimine la tabla, si existe.
+2- Créela con la siguiente estructura:
+ -codigo (entero sin signo, autoincrementable),
+ -titulo (cadena de 30), not null,
+ -actor (cadena de 20),
+ -duracion (entero sin signo no mayor a 200 aprox(tinyint)),
+ -clave primaria (codigo).
+
+3- Visualice la estructura de la tabla "peliculas".
+4- Ingrese los siguientes registros:
+ insert into peliculas (titulo,actor,duracion)
+  values('Mision imposible','Tom Cruise',120);
+ insert into peliculas (titulo,actor,duracion)
+  values('Harry Potter y la piedra filosofal','Daniel R.',180);
+ insert into peliculas (titulo,actor,duracion)
+  values('Harry Potter y la camara secreta','Daniel R.',190);
+ insert into peliculas (titulo,actor,duracion)
+  values('Mision imposible 2','Tom Cruise',120);
+ insert into peliculas (titulo,actor,duracion)
+  values('Mujer bonita','Richard Gere',120);
+ insert into peliculas (titulo,actor,duracion)
+  values('Tootsie','D. Hoffman',90);
+ insert into peliculas (titulo,actor,duracion)
+  values('Un oso rojo',null,100);
+ insert into peliculas (titulo,actor,duracion)
+  values('Elsa y Fred','China Zorrilla',110);
+ insert into peliculas (titulo,actor,duracion)
+  values('Mrs. Johns','Richard Gere',180);
+
+
+5- Actualice el valor del campo "actor" cambiando por 'R. Gere- J. Roberts', de la película cuyo 
+código es 5 . 
+
+6- Seleccione todas las películas en las cuales trabaje el actor "Gere". Use "like".
+
+7- Recupere los registros que NO contengan la letra "y" en el título y contenga "ch" en el 
+campo "actor" 
+
+8- Seleccione las películas que comiencen con "M" y cuya duración sea menor a 150
+
+9- Cambie el valor de la duración a 100 en las películas en las cuales el campo "actor" comience 
+con "D"
+
+10- Recupere los registros que cumplan la condición del punto anterior, para verificar el cambio de 
+la duración
+
+11- Vea si existen películas con títulos nulos
+
+12- Vea si existen películas con valor nulo en el campo "actor"
+
+
+==========================================================================================================================
+Ejercicio 2 : 
+------------
+
+Trabaje con la tabla "usuarios" que almacena el nombre y clave de cada usuario.
+
+1- Elimine la tabla, si existe.
+- Créela con la siguiente estructura:
+ -nombre (cadena de 20),
+ -clave (cadena de 10),
+ -clave primaria (clave).
+
+
+
+2- Visualice la estructura de la tabla "usuarios".
+
+3- Ingrese los siguientes registros:
+ insert into usuarios (nombre, clave) values ('Leonardo','payaso');
+ insert into usuarios (nombre, clave) values ('MarioPerez','Marito');
+ insert into usuarios (nombre, clave) values ('Marcelo','River');
+ insert into usuarios (nombre, clave) values ('Gustavo','Boca');
+ insert into usuarios (nombre, clave) values ('MarcosMercado','RealMadrid');
+ insert into usuarios (nombre, clave) values ('Susana','chapita');
+ insert into usuarios (nombre, clave) values ('Gonzalo','Z80');
+ insert into usuarios (nombre, clave) values ('GustavoPereyra','RealMadrid');
+
+
+4- Busque los registros cuya clave contenga sólo 5 letras
+5- Busque los registros cuyo nombre de usuario termine con "o"
+
+
